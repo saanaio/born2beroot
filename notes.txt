@@ -1,0 +1,16 @@
+Useful commands
+
+SUDO
+check sudo version sudo -V
+
+
+Steps taken
+1. Install the image
+2. Installation
+3. Partitioning of the disk
+4. SSH
+- Modify /etc/ssh/sshd_config
+- Change root login & modify port to 4242
+5. Firewall
+- Allow a port: sudo ufw allow 4242
+6. Password policies
