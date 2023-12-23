@@ -14,3 +14,9 @@ Steps taken
 5. Firewall
 - Allow a port: sudo ufw allow 4242
 6. Password policies
+
+7 Monitoring script
+cat /etc/cron.d/monitoring.sh
+
+7. Crontab
+- sudo crontab -u root -e
