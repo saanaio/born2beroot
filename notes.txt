@@ -1,8 +1,53 @@
 Useful commands
 
-SUDO
-check sudo version sudo -V
-
+check OS:
+	uname -a
+check AppArmor:
+	systemctl status apparmor
+check Partitioning
+	lsblk
+check ssh status
+	sudo service ssh status 
+	sudo ss -tulpn
+check ufw status
+	sudo service ufw status
+	sudo ufw status
+ufw add & remove port
+	sudo ufw allow 8080
+	sudo ufw delete allow 8080
+check hostname
+	hostname
+change hostname
+	sudo hostnamectl set-hostname skivimaa24
+	sudo nano /etc/hostname
+sudo version
+	sudo -V
+modify sudo policies
+	sudo nano /etc/sudoers.d/sudo_config
+add a new user
+	sudo useradd username
+delete user
+	sudo userdel -r testuser2
+change password
+	sudo passwd skivimaa
+expire a password
+	sudo passwd --expire username
+get all groups
+	getent group
+add a new group
+	groupadd
+add groups to a user
+	sudo usermod -aG testgroup testuser
+	sudo gpasswd -d <user> <group>
+delete group from a user
+	sudo gpasswd -d <user> <group>
+check users groups
+	groups skivimaa
+modify password policy
+	sudo nano /etc/security/pwquality.conf
+	sudo nano /etc/pam.d/common-password
+reboot
+	sudo reboot now
 
 Steps taken
 1. Install the image
