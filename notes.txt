@@ -25,7 +25,7 @@ sudo version
 modify sudo policies
 	sudo nano /etc/sudoers.d/sudo_config
 add a new user
-	sudo useradd username
+	sudo adduser username
 delete user
 	sudo userdel -r testuser2
 change password
